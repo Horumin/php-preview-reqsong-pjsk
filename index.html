@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost/RequestSystem/RequestSong.php -->
+<html langs="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title> Horumin Live </title>
+    <link rel="stylesheet" type="text/css" href="./index_files/style.css">
+    <link rel="icon" href="./index_files/logo.webp">
+    <script src="./index_files/script.js.download"></script>
+<link href="./index_files/css" rel="stylesheet"><style id="smrt-collector-foreground-styles">[class*="smrt-collector-foreground-box"] { background: #2c96f754; }</style></head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="./index_files/logo.webp" alt="Lumi Logo">
+    </div>
+    <h1>Holumi - RequestSong</h1>
+    <nav>
+        <ul>
+            <li><a href="http://localhost/RequestSystem/RequestSong.php#profile">Lumi Profile</a></li>
+            <li><a href="http://localhost/RequestSystem/RequestSong.php#more">Lumi Media</a></li>
+            <li><a href="http://localhost/RequestSystem/RequestSong.php#request">Request Song</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="profile" class="profile">
+    <h2>Who is Holumi?</h2>
+    <p>Holumi, atau biasa dipanggil Lumi, adalah seorang konten kreator kreatif yang aktif di platform 
+       <a href="https://www.tiktok.com/@holumin">TikTok</a>. Lumi dikenal karena gaya komunikasinya yang santai, 
+       interaktif, dan penuh semangat. Lumi membagikan banyak konten menarik yang mencakup pengalaman bermain game, tips, dan hiburan. Konten Lumi sebagian besar berfokus pada <strong>game rhythm</strong> seperti <em>Project Sekai</em> atau 
+       <em>lainnya</em>.</p>
+    <img src="./index_files/profile.webp" alt="Profile Lumi" class="Image-Responsive">
+</section>
+
+
+    <section id="more" class="more">
+    <h2> Holumi Social Media </h2>
+    <ul>
+        <li><a href="https://www.tiktok.com/@holumin">TikTok</a></li>
+        <li><a href="https://www.instagram.com/holumi.i/">Instagram</a></li>
+    <h2> Follow Me! </h2>
+        <li><a href="https://saweria.co/holumi">Saweria</a></li>
+        <li><a href="https://discord.com/invite/d7gbBUZCfR">Discord</a></li>
+    </ul>
+    </section>
+
+    <section id="request" class="request">
+    <div class="container">
+    <h2> Add Request </h2>
+    <form name="userForm" action="http://localhost/RequestSystem/RequestSong.php" method="POST" onsubmit="return validateForm()">
+        <label>TikTok Name:</label>
+        <input type="text" name="name" require=""><br>
+        <label>Song Name:</label>
+        <input type="text" name="song" require=""><br>
+        <label for="diff">Tingkat Kesulitan:</label>
+        <select id="diff" name="diff">
+            <option value="Easy">Easy</option>
+            <option value="Normal">Normal</option>
+            <option value="Hard">Hard</option>
+            <option value="Extreme">Extreme</option>
+            <option value="Master">Master</option>
+            <option value="Append">Append</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    </div></section>
+
+<footer id="contact">
+    <div class="footer-info">
+        <h2>Kontak Kami</h2>
+        <p>TikTok: @horumin</p>
+    </div>
+</footer>
+
+<div id="smrt-collector-foreground-root" class="smrt-collector-foreground-root"><script></script></div></body></html>

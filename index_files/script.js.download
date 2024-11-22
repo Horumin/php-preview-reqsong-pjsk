@@ -1,0 +1,24 @@
+// Function to validate form inputs
+function validateForm() {
+    const name = document.forms["userForm"]["name"].value;
+    const email = document.forms["userForm"]["email"].value;
+    const age = document.forms["userForm"]["age"].value;
+
+    if (!name || !email || !age) {
+        alert("All fields are required!");
+        return false;
+    }
+
+    const ageValue = parseInt(age, 10);
+    if (ageValue < 0) {
+        alert("Age must be a positive number.");
+        return false;
+    }
+
+    return true;
+}
+
+// Function to confirm delete action
+function confirmDelete() {
+    return confirm("Are you sure you want to delete this record?");
+}
